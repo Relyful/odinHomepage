@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -76,8 +78,75 @@ textarea:not([rows]) {
 
 /* CUSTOM CSS HERE */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+#designElement {
+  position: absolute;
+  top: -17vh;
+  left: -30vw;
+  width: 150vw;
+  height: 55vh;
+  transform: rotate(-15deg);
+  background-color: cadetblue;
+  z-index: -1;
+}
+
+.portraitContainer {
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.portraitContainer h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 3em;  background-color: rgba(0, 0, 0, 0.432);
+  font-weight: 400;
+  color: white;
+  top: 29rem;
+  left: 15rem;
+}
+
+.portraitContainer img {
+  height: 50vh;
+}
+
+.aboutMe {
+  max-width: 660px;
+  max-height: 90%;
+  flex-shrink: 0;
+  background-color: white;
+  align-self: center;
+  padding: 1rem 1rem 1rem 2rem;
+  margin-left: -1rem;
+  z-index: 1;
+  box-shadow: 0px 0px 15px black;
+}
+
+.aboutMe p {
+  padding-bottom: 2rem;
+}
+
+.aboutMe h2 {
+  padding: 1rem 0 1rem 0;
+}
+
+.aboutMe .links {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  padding: 0 10px 10px 0;
+}
+
+.aboutMe .links img {
+  min-height: 2rem;
 }
