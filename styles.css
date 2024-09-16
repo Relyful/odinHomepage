@@ -168,7 +168,7 @@ main {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(2, 21em);
+  grid-auto-rows: 21em;
   gap: 2rem;
 }
 
