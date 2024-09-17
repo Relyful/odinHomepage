@@ -164,8 +164,14 @@ main {
   margin-bottom: 5rem;
 }
 
+main h2 {
+  margin-left: 2rem;
+}
+
 .workCards {
   margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: 21em;
@@ -266,11 +272,25 @@ footer p {
     margin: -9rem 1rem 1rem 3.5rem;
   } 
 
+  .portraitContainer img {
+    height: 40vh;
+  }
+
+  .portraitContainer h1 {
+    transform: translate(14rem, -23rem);
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 145px;
+  }
+
   .aboutMe {
     margin-top: 13rem;
-    margin-left: 13rem;
+    margin-left: 7rem;
     margin-right: 3rem;
 
     max-width: 1000px;
+  }
+
+  .workCards {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }
