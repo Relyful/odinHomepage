@@ -117,13 +117,11 @@ header {
   font-size: 3em;  background-color: rgba(0, 0, 0, 0.432);
   font-weight: 400;
   color: white;
-  transform: translate(3rem, -4.5rem);
-  /* top: 29rem;
-  left: 14rem; */
+  transform: translate(20%, -160%);
 }
 
 .portraitContainer img {
-  height: 49vh;
+  height: 500px;
 }
 
 .aboutMe {
@@ -275,7 +273,7 @@ footer p {
   } 
 
   .portraitContainer img {
-    height: 40vh;
+    height: 386px;
   }
 
   .portraitContainer h1 {
