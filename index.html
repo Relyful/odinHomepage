@@ -10,7 +10,10 @@
     <header>
       <div id="designElement" aria-hidden="true"></div>
       <div class="portraitContainer">
-        <img src="Images/portrait.jpg" alt="Selfie of myself in a chair" />
+        <picture>
+          <source media="(max-width: 499px)" srcset="Images/portrait-narrow.png">
+          <img src="Images/portrait.jpg" alt="Selfie of myself in a chair" />
+        </picture>
         <h1>Marko Dinka</h1>
       </div>
       <section class="aboutMe">

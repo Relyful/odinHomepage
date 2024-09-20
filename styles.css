@@ -14,6 +14,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  overflow-x: hidden;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -97,11 +98,11 @@ header {
 
 #designElement {
   position: absolute;
-  top: -60vh;
-  left: -30vw;
-  width: 150vw;
-  height: 100vh;
-  transform: rotate(-10deg);
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  width: 100vw;
+  height: 60vh;
   background-color: var(--main-bg-color);
   z-index: -1;
 }
@@ -164,6 +165,7 @@ main {
 
 main h2 {
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .workCards {
@@ -220,6 +222,7 @@ footer {
 .contactCard {
   max-width: 330px;
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .landscapePhoto {
@@ -330,7 +333,15 @@ footer p {
 
   .portraitContainer img {
     height: auto;
-    width: 85vw;
+    width: 320px;   
+  }
+
+  .portraitContainer h1 {
+    transform: translate(0rem, -2.2em);
+    background-color: rgba(0, 0, 0, 0);
+    max-width: 145px;
+    text-align: start;
+    font-size: 3.5em;
   }
 
   .aboutMe {
@@ -338,15 +349,65 @@ footer p {
     font-size: 1.5em;
     margin-left: 1em;
     margin-right: 1em;
+    margin-top: 2.5rem;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .aboutMe p {
+    font-size: 0.8em;
+  }
+
   .aboutMe .links img {
     min-height: 2em;
+  }
+
+  main h2 {
+    text-align: center;
+    padding-bottom: 1em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .workCards {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-bottom: 0;
+    font-size: 1.2em;
+  }
+
+  .contactCard {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .contactCard h2 {
+    text-align: center;
+  }
+
+  footer picture {
+    width: 100vw;
+    margin-top: 50px;
+  }
+
+  footer .links {
+    justify-content: center;
+  }
+
+  footer img {
+    min-height: 3rem;
+  }
+
+  footer .contactList img {
+    display: none;
   }
 }
