@@ -102,7 +102,7 @@ header {
   left: 0;
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   width: 100vw;
-  height: 60vh;
+  height: 53vh;
   background-color: var(--main-bg-color);
   z-index: -1;
 }
@@ -262,6 +262,10 @@ footer p {
 }
 
 @media (max-width: 999px) and (min-width: 500px) {
+  #designElement {
+    height: 60vh;
+  }
+
   header {
     display: block;
     margin-left: auto;
@@ -326,6 +330,10 @@ footer p {
 }
 
 @media (max-width: 499px) {
+  #designElement {
+    height: 60vh;
+  }
+
   header {
     flex-direction: column;
     align-items: center;
